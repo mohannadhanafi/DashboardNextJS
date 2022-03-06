@@ -1,12 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Sidebar from './components/sidebar'
+import Header from "./components/Header";
+import Sidebar from "./components/sidebar";
 
 export default function Home() {
   return (
     <div>
-      <Sidebar />
+      <div className="flex ">
+        <Sidebar />
+        <div className="w-screen">
+          <Header />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
